@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class='registro'>
+        <main class='caja-form'>
+          <form class='form' onSubmit={handleSubmit}>
+            <h1 class='form__title'>Registro</h1>
+  
+            <div class='form__campos'>
+              <label>Nombre</label>
+              <input class='campo' name='firstName' type='text' placeholder='nombre' />
+  
+              <label>Apellido</label>
+              <input class='campo' name='lastName' type='text' placeholder='nombre' />
+  
+              <label>Correo</label>
+              <input class='campo' name='email' type='email' placeholder='correo' />
+  
+              <label>Contraseña</label>
+              <input class='campo' name='password' type='password' placeholder='contraseña' />
+            </div>
+  
+            <button type='submit' class='btn'>Enviar</button>
+  
+            <div class='text'>
+              <p class='text__p'>¿Ya tienes una cuenta? &nbsp;
+                <a href='/ingreso' class='text__enlace'>
+                  Ingresa aquí
+                </a>
+              </p>
+            </div>
+          </form>
+        </main>
+      </div>
+</body>
+</html>
